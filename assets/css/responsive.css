@@ -1,0 +1,79 @@
+/* Mobile breakpoint */
+
+@media only screen and (max-width: 739px) {
+    .s-col-full {
+        width: 100%;
+    }
+    .header {
+        overflow: hidden;
+    }
+    .header .mobile-menu-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+    }
+    .nav-bar {
+        display: block;
+    }
+    .nav-bar>li {
+        display: block;
+    }
+    .nav-bar>li:first-child {
+        display: inline-block;
+    }
+    .sub-nav-bar {
+        position: initial;
+    }
+    .sub-nav-bar li {
+        background-color: #000;
+    }
+    .sub-nav-bar li a {
+        color: #fff;
+    }
+    .search-btn {
+        display: none;
+    }
+    .name {
+        margin: 31px 0;
+    }
+    .avatar {
+        width: 60%;
+    }
+    .place-content {
+        margin-bottom: 16px;
+    }
+    .place-buy-btn {
+        display: block;
+        text-align: center;
+        padding: 15px;
+    }
+    .contact-info {
+        width: 100%;
+    }
+    .contact-control {
+        margin: 16px 0;
+    }
+    .submit-btn {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+
+/* Tablet and mobile */
+
+@media only screen and (max-width: 1024px) {
+    .social a i {
+        padding: 0 10px;
+        font-size: 36px;
+    }
+    .footer .copyright {
+        display: inline-block;
+        padding: 33px;
+        font-size: 21px;
+    }
+    .footer p a {
+        font-size: 25px;
+    }
+}

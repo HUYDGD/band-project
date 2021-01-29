@@ -3,64 +3,83 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #fff;
     scroll-behavior: smooth;
 }
+
+
 /* General class CSS */
+
 .clear {
     clear: both;
 }
+
 .row {
     margin-left: -8px;
     margin-right: -8px;
 }
+
 .row::after {
     display: block;
     clear: both;
     content: "";
 }
+
 .col {
     float: left;
     padding: 0 8px;
 }
+
 .col-half {
     width: 50%;
 }
+
 .col-third {
     width: 33.33333%;
 }
+
 .col-full {
     width: 100%;
 }
+
 .mt-8 {
     margin-top: 8px;
 }
+
 .mt-16 {
     margin-top: 16px;
 }
+
+
 /* Header class CSS */
+
 .header {
     background-color: #000;
     width: 100%;
     position: fixed;
     z-index: 2;
     top: 0;
-}
-.nav-bar {
     height: 46px;
+}
+
+.nav-bar {
     display: inline-block;
     position: relative;
 }
+
 .nav-bar .arrow-down {
     font-size: 12px;
     line-height: 46px;
 }
+
 .nav-bar li {
     display: inline-block;
     position: relative;
 }
+
 .nav-bar li a {
     text-decoration: none;
     color: white;
@@ -69,20 +88,23 @@ html {
     font-weight: 500;
     font-size: 15px;
     text-transform: uppercase;
-    display: inline-block;
+    display: block;
 }
-.nav-bar > li > a:hover {
+
+.nav-bar>li>a:hover {
     height: 46px;
     color: #000;
     background-color: #ccc;
 }
+
 .sub-nav-bar {
     display: none;
     position: absolute;
     top: 46px;
-    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
     z-index: 1;
 }
+
 .sub-nav-bar li {
     background-color: white;
     display: block;
@@ -90,37 +112,58 @@ html {
     line-height: 38px;
     height: 38px;
 }
+
 .sub-nav-bar li a {
     color: #000;
     text-transform: none;
     font-size: 15px;
 }
+
 .sub-nav-bar li:hover {
     background-color: #ccc;
 }
-.nav-bar li:hover .sub-nav-bar{
+
+.nav-bar li:hover .sub-nav-bar {
     display: block;
 }
+
+.header .mobile-menu-btn {
+    display: none;
+}
+
+.mobile-menu-btn,
 .header .search-btn {
     float: right;
     padding: 0 24px;
     line-height: 46px;
 }
+
+.mobile-menu-btn,
 .search-btn .search-icon {
     color: #fff;
     font-size: 14px;
 }
+
 .search-btn:hover {
     background-color: #f44336;
     cursor: pointer;
 }
+
+.mobile-menu-btn:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+
 /* Slider class CSS */
+
 .slider {
     position: relative;
     margin-top: 46px;
     padding-top: 50%;
-    background: url(../img/slider/chicago.jpg) top center / cover no-repeat;
+    background: url('../img/band.jpg') top center / cover no-repeat;
 }
+
 .slider .text-content {
     position: absolute;
     text-align: center;
@@ -129,76 +172,98 @@ html {
     transform: translateX(-50%);
     color: #fff;
     padding-top: 32px;
+    text-shadow: 0 0 1px #000;
 }
+
 .slider .text-heading {
     font-size: 24px;
     font-weight: 400;
     margin: 10px 0;
 }
+
 .slider .text-des {
     font-size: 15px;
     font-weight: 600;
 }
+
+
 /* Content class CSS */
+
 .content-section {
     width: 800px;
+    max-width: 100%;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
     margin-bottom: 112px;
+    padding: 0 16px;
 }
+
 .heading-section {
     padding-top: 64px;
     font-size: 30px;
     letter-spacing: 4px;
     font-weight: 300;
 }
+
 .sub-heading {
     font-size: 15px;
     margin: 15px 0;
     font-style: italic;
 }
-.about { 
+
+.about {
     font-size: 15px;
     margin: 15px 0;
     text-align: justify;
 }
+
 .member-section {
     margin-top: 32px;
 }
+
 .name {
     margin: 15px 0;
     font-size: 15px;
     font-weight: 500;
 }
+
 .member-list {
     display: inline-block;
     width: 33.33333%;
 }
+
 .avatar {
     width: 153px;
 }
+
 .text-white {
     color: #fff!important;
 }
+
 .tour-section {
     width: 100%;
     background-color: #000;
 }
-.tour-section .heading-section, .tour-section .sub-heading {
+
+.tour-section .heading-section,
+.tour-section .sub-heading {
     text-align: center;
 }
+
 .tickets-list {
     margin-top: 40px;
     background-color: #fff;
     list-style-type: none;
 }
+
 .tickets-list li {
     font-size: 15px;
     color: #757575;
     padding: 8px 16px;
     text-align: left;
 }
+
 .tickets-list .sold-out {
     display: inline-block;
     background-color: #f44336;
@@ -208,6 +273,7 @@ html {
     margin-left: 16px;
     font-weight: 600;
 }
+
 .tickets-list .quantity {
     color: #fff;
     background-color: #000;
@@ -217,32 +283,40 @@ html {
     padding: 0 8px;
     float: right;
 }
+
 .places-list {
     padding-top: 32px;
 }
+
 .place-img {
     width: 100%;
     display: block;
 }
+
 .place-img:hover {
     opacity: 0.6;
 }
+
 .place-content {
     font-size: 15px;
     background-color: #fff;
     padding: 16px;
     text-align: left;
 }
+
 .place-content h3 {
     font-size: 15px;
 }
+
 .place-time {
     margin-top: 15px;
     color: #757575;
 }
+
 .place-desc {
     margin-top: 15px;
 }
+
 .place-buy-btn {
     color: #fff;
     margin-top: 15px;
@@ -251,30 +325,45 @@ html {
     background-color: #000;
     padding: 8px 16px;
 }
+
 .place-buy-btn:hover {
     color: #000;
     background-color: #ccc;
 }
+
 .contact-content {
     margin-top: 48px;
 }
+
 .contact-info {
     font-size: 18px;
     line-height: 1.5;
     text-align: left;
 }
+
 .contact-info i[class*="fa-"] {
     width: 30px;
     display: inline-block;
 }
+
+.contact-info p a {
+    opacity: 0.8;
+}
+
+.contact-info p a:hover {
+    opacity: 1;
+}
+
 .contact-form {
     font-size: 15px;
 }
+
 .contact-control {
     padding: 10px;
     border: 1px solid #ccc;
     width: 100%;
 }
+
 .submit-btn {
     float: right;
     font-size: 15px;
@@ -284,35 +373,47 @@ html {
     border: none;
     font-weight: 500;
 }
+
 .submit-btn:hover {
     background-color: #ccc;
     color: #000;
     cursor: pointer;
 }
+
+
 /* Map class CSS */
+
 .map-img {
     width: 100%;
 }
+
+
 /* Footer class CSS */
+
 .footer {
     font-size: 24px;
     text-align: center;
     margin: 64px 0;
 }
+
 .footer .social a {
     color: rgba(0, 0, 0, 0.6);
 }
+
 .footer .social a:hover {
     color: rgba(0, 0, 0, 0.4);
 }
+
 .footer .copyright {
     color: rgba(0, 0, 0, 0.6);
     margin-top: 15px;
     font-size: 15px;
 }
+
 .footer .copyright a {
     color: rgba(0, 0, 0, 0.6);
 }
+
 .footer .copyright a:hover {
     color: rgba(0, 0, 0, 0.4);
 }
